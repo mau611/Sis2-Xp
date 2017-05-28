@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FacturaController">
+   <children>
+      <Label layoutX="237.0" layoutY="33.0" text="GENERAR FACTURA">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="77.0" text="Factura #" />
+      <Label fx:id="numeroFactura" layoutX="101.0" layoutY="77.0" prefHeight="17.0" prefWidth="50.0" text="0000000" />
+      <Label layoutX="33.0" layoutY="113.0" text="Nombre" />
+      <TextField fx:id="campoNombre" layoutX="101.0" layoutY="109.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="37.0" layoutY="155.0" text="Nit/Ci" />
+      <TextField fx:id="campoNit" layoutX="102.0" layoutY="151.0" prefHeight="25.0" prefWidth="194.0" />
+      <Label layoutX="355.0" layoutY="134.0" text="Fecha" />
+      <DatePicker fx:id="fecha" layoutX="415.0" layoutY="130.0" />
+      <TableView fx:id="tabla" layoutX="2.0" layoutY="200.0" prefHeight="301.0" prefWidth="643.0">
+        <columns>
+          <TableColumn fx:id="columnaCantidad" prefWidth="75.0" text="Cantidad" />
+          <TableColumn fx:id="columnaProducto" prefWidth="297.0" text="Producto" />
+            <TableColumn fx:id="columnaPrecio" prefWidth="146.0" text="Precio unitario" />
+            <TableColumn fx:id="columnaTotal" prefWidth="124.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="generar" layoutX="55.0" layoutY="531.0" mnemonicParsing="false" onAction="#llenar" text="Generar" />
+      <Label layoutX="580.0" layoutY="514.0" text="Total" />
+      <TextField fx:id="campoTotal" layoutX="555.0" layoutY="531.0" prefHeight="25.0" prefWidth="76.0" />
+      <Button fx:id="imprimir" layoutX="291.0" layoutY="531.0" mnemonicParsing="false" onAction="#imprimirFactura" text="Imprimir" />
+   </children>
+</AnchorPane>
