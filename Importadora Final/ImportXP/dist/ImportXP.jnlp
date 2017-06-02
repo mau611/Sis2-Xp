@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ImportXP.jnlp">
+  <information>
+    <title>ImportXP</title>
+    <vendor>Jota</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ImportXP.jar" size="61173" download="eager" />
+    <jar href="lib\iText-5.0.5.jar" size="1599728" download="eager" />
+    <jar href="lib\postgresql-42.0.0.jar" size="707261" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ImportXP" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="application.Main"  name="ImportXP" />
+  <update check="always"/>
+</jnlp>

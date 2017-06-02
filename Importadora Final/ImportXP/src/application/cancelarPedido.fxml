@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.cancelarPedidoController">
+   <children>
+      <Label fx:id="titSupID" layoutX="70.0" layoutY="74.0" text="ID PEDIDO:" />
+      <TextField fx:id="campoBusqueda" layoutX="162.0" layoutY="70.0" />
+      <Label fx:id="titIdPedido" layoutX="121.0" layoutY="189.0" text="ID PEDIDO :" />
+      <Label fx:id="titProducto" layoutX="118.0" layoutY="228.0" text="PRODUCTO :" />
+      <Label fx:id="titCantidad" layoutX="120.0" layoutY="267.0" text="CANTIDAD :" />
+      <Label fx:id="titFechaPedido" layoutX="100.0" layoutY="306.0" text="FECHA PEDIDO :" />
+      <Label fx:id="titCancelar" layoutX="65.0" layoutY="355.0" text="SE PUEDE CANCELAR :" />
+      <Button fx:id="btnCancelarPedido" layoutX="267.0" layoutY="396.0" mnemonicParsing="false" onAction="#cancelarPedido" text="CANCELAR PEDIDO" />
+      <Label fx:id="respIdProducto" layoutX="245.0" layoutY="189.0" text="Label" />
+      <Label fx:id="respProducto" layoutX="245.0" layoutY="228.0" text="Label" />
+      <Label fx:id="respCantidad" layoutX="245.0" layoutY="267.0" text="Label" />
+      <Label fx:id="respFechaPedido" layoutX="245.0" layoutY="306.0" text="Label" />
+      <Label fx:id="respCancelar" layoutX="245.0" layoutY="355.0" text="Label" />
+      <Button fx:id="btnBuscarPedido" defaultButton="true" layoutX="370.0" layoutY="70.0" mnemonicParsing="false" onAction="#buscarPedido" prefHeight="25.0" prefWidth="91.0" text="BUSCAR" />
+   </children>
+</AnchorPane>

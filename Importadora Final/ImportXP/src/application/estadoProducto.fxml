@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="256.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.estadoProductoController">
+   <children>
+      <Label layoutX="162.0" layoutY="20.0" text="Estado Producto">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <Label layoutX="72.0" layoutY="79.0" text="Id Pedido">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutX="84.0" layoutY="135.0" text="Estado">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <ComboBox fx:id="estado" layoutX="206.0" layoutY="131.0" onMouseClicked="#inicializar" prefWidth="150.0" />
+      <Button layoutX="157.0" layoutY="188.0" mnemonicParsing="false" text="Cambiar Estado" />
+      <TextField fx:id="campoId" layoutX="207.0" layoutY="75.0" />
+   </children>
+</AnchorPane>

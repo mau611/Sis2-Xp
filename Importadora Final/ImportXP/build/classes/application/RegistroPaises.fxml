@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="179.0" prefWidth="317.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegistroPaisesController">
+   <children>
+      <Label layoutX="127.0" layoutY="14.0" text="REGISTRAR PAÍS" />
+      <Label layoutX="52.0" layoutY="64.0" text="NOMBRE :" />
+      <Label layoutX="52.0" layoutY="102.0" text="PRECIO :" />
+      <TextField fx:id="txtFieldNombre" layoutX="120.0" layoutY="60.0" />
+      <TextField fx:id="txtFielPrecio" layoutX="120.0" layoutY="98.0" />
+      <Button layoutX="178.0" layoutY="140.0" mnemonicParsing="false" onAction="#registrar" text="Aceptar" />
+      <Button layoutX="241.0" layoutY="140.0" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+   </children>
+</AnchorPane>
